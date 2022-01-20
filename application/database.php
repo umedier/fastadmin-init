@@ -18,13 +18,13 @@ return [
     // 服务器地址
     'hostname'        => Env::get('database.hostname', '127.0.0.1'),
     // 数据库名
-    'database'        => Env::get('database.database', 'fastadmin'),
+    'database'        => Env::get('database.database', 'fast-admin-init'),
     // 用户名
     'username'        => Env::get('database.username', 'root'),
     // 密码
-    'password'        => Env::get('database.password', ''),
+    'password'        => Env::get('database.password', '123456'),
     // 端口
-    'hostport'        => Env::get('database.hostport', ''),
+    'hostport'        => Env::get('database.hostport', '15030'),
     // 连接dsn
     'dsn'             => '',
     // 数据库连接参数
