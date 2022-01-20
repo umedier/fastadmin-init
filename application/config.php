@@ -22,7 +22,7 @@ return [
     // 应用Trace
     'app_trace'              => Env::get('app.trace', false),
     // 应用模式状态
-    'app_status'             => '',
+    'app_status'             => 'config_' . Env::get('app.env'),
     // 是否支持多模块
     'app_multi_module'       => true,
     // 入口自动绑定模块
@@ -260,7 +260,7 @@ return [
     //FastAdmin配置
     'fastadmin'              => [
         //是否开启前台会员中心
-        'usercenter'            => true,
+        'usercenter'            => false,
         //会员注册验证码类型email/mobile/wechat/text/false
         'user_register_captcha' => 'text',
         //登录验证码
@@ -270,7 +270,7 @@ return [
         //是否同一账号同一时间只能在一个地方登录
         'login_unique'          => false,
         //是否开启IP变动检测
-        'loginip_check'         => true,
+        'loginip_check'         => false,
         //登录页默认背景图
         'login_background'      => "",
         //是否启用多级菜单导航
@@ -278,7 +278,7 @@ return [
         //是否开启多选项卡(仅在开启多级菜单时起作用)
         'multipletab'           => true,
         //后台皮肤,为空时表示使用skin-black-blue
-        'adminskin'             => '',
+        'adminskin'             => 'skin-green',
         //后台是否启用面包屑
         'breadcrumb'            => false,
         //是否允许未知来源的插件压缩包

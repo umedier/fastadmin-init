@@ -1,5 +1,4 @@
-define([], function () {
-    require(['../addons/bootstrapcontextmenu/js/bootstrap-contextmenu'], function (undefined) {
+require(['../addons/bootstrapcontextmenu/js/bootstrap-contextmenu'], function (undefined) {
     if (Config.controllername == 'index' && Config.actionname == 'index') {
         $("body").append(
             '<div id="context-menu">' +
@@ -71,5 +70,4 @@ define([], function () {
         }
     });
 
-});
 });

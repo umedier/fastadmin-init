@@ -2,7 +2,12 @@
 
 return [
     'autoload' => false,
-    'hooks' => [],
+    'hooks' => [
+        'app_init' => [
+            'crontab',
+            'log',
+        ],
+    ],
     'route' => [],
     'priority' => [],
     'domain' => '',
